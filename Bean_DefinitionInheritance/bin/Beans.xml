@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+	<bean id="helloWorld" class="com.BeanDefinitionInheritance.HelloWorld" >
+		<property name="message1" value="This is a message from the World"/>
+		<property name="message2" value="This is a message from the second World"/>
+	</bean>
+	
+	<bean id="helloHawk" class="com.BeanDefinitionInheritance.HelloHawk" parent="helloWorld">
+		<property name="message1" value="This is a message from Hawk"/>
+		<property name="message3" value="Đây là tin nhắn của "/>
+	</bean>	
+	
+
+
+	
+</beans>
